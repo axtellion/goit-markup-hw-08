@@ -1,0 +1,13 @@
+.comment--textarea {
+  height: 120px;
+  resize: none;
+  padding: 16px 12px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}

@@ -1,0 +1,33 @@
+@import "./utils/variables";
+@import "./utils/hidden";
+
+@import "./base/reset";
+
+@import "./components/section";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/current";
+@import "./components/personal-date";
+@import "./components/social";
+@import "./components/adres";
+@import "./components/mailing";
+@import "./components/page";
+
+// Modal
+@import "./components/modal-backdrop";
+@import "./components/modal-form";
+@import "./components/check";
+@import "./components/textarea";
+
+// Section Page 1
+@import "./layout/heder";
+@import "./layout/hero";
+@import "./layout/specificity";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+// Section Page 2
+@import "./layout/portfolio";
