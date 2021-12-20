@@ -42,10 +42,7 @@
         </nav>
         <ul class="personal-date">
           <li class="personal-date__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="personal-date__link link"
-            >
+            <a href="mailto:info@devstudio.com" class="personal-date__link">
               <svg class="personal-date__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
@@ -53,7 +50,7 @@
             >
           </li>
           <li class="personal-date__item">
-            <a href="tel:+380961111111" class="personal-date__link link">
+            <a href="tel:+380961111111" class="personal-date__link">
               <svg class="personal-date__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -61,6 +58,65 @@
             >
           </li>
         </ul>
+        <button type="button" class="burger--open">
+          <svg class="mobail__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobail__burger is-hidden">
+        <div class="mobail__container">
+          <div class="mobail__block--top">
+            <button type="button" class="burger--close">
+              <svg class="mobail__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="page-mob">
+              <li class="page-mob__item">
+                <a
+                  href="./index.html"
+                  class="page-mob__link page__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="page-mob__item">
+                <a href="./portfolio.html" class="page-mob__link">Портфолио</a>
+              </li>
+              <li class="page-mob__item">
+                <a href="" class="page-mob__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobail_block--bottom">
+            <ul class="personal-mob">
+              <li class="personal-mob__item">
+                <a href="tel:+380961111111" class="personal-mob__link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="personal-mob__item">
+                <a href="mailto:info@devstudio.com" class="personal-mob__link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social">
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Instagram</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Twitter</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Facebook</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -72,7 +128,7 @@
           </button>
         </div>
       </section>
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="specificity">
@@ -127,13 +183,18 @@
           </ul>
         </div>
       </section>
-      <section class="section section--no-pading">
+      -->
+      <!-- <section class="section section--no-pading">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about list">
             <li class="about__item">
               <div class="about__wraper">
                 <img
+                  srcset="
+                    ./images/portfolio-img-4.jpg 440w,
+                    ./images/hobby_1.jpg
+                  "
                   src="./images/hobby_1.jpg"
                   alt="Увлечения нашей команды"
                   width="370"
@@ -163,8 +224,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section section--color-white">
+      </section> -->
+      <!-- <section class="section section--color-white">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
@@ -367,9 +428,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__wrap">
         <div class="footer__adres">
           <a class="logo footer__link" href="./index.html"
@@ -451,7 +512,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close>
@@ -535,6 +596,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
