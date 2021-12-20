@@ -3,6 +3,10 @@
   border: none;
   width: 40px;
   height: 40px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .burger--close {
@@ -12,6 +16,10 @@
   height: 40px;
   display: block;
   margin-left: auto;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .mobail__burger {
@@ -77,11 +85,17 @@
 .mob-social {
   display: flex;
   margin: 0 -10px;
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mob-social__item {
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  @media screen and (max-width: 400px) {
+    margin-bottom: 10px;
   }
 }
 

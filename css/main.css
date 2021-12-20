@@ -102,7 +102,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -909,6 +909,10 @@ a {
   height: 40px;
 }
 
+.burger--open:hover, .burger--open:focus {
+  fill: var(--accent-color);
+}
+
 .burger--close {
   background-color: #ffffff;
   border: none;
@@ -916,6 +920,10 @@ a {
   height: 40px;
   display: block;
   margin-left: auto;
+}
+
+.burger--close:hover, .burger--close:focus {
+  fill: var(--accent-color);
 }
 
 .mobail__burger {
@@ -979,8 +987,20 @@ a {
   margin: 0 -10px;
 }
 
+@media screen and (max-width: 400px) {
+  .mob-social {
+    flex-wrap: wrap;
+  }
+}
+
 .mob-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (max-width: 400px) {
+  .mob-social__item {
+    margin-bottom: 10px;
+  }
 }
 
 .mob-social__link {
