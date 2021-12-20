@@ -7,6 +7,10 @@
   &:focus {
     fill: var(--accent-color);
   }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .burger--close {
@@ -85,9 +89,9 @@
 .mob-social {
   display: flex;
   margin: 0 -10px;
-  @media screen and (max-width: 400px) {
-    flex-wrap: wrap;
-  }
+  //   @media screen and (max-width: 400px) {
+  flex-wrap: wrap;
+  //   }
 }
 
 .mob-social__item {
@@ -95,7 +99,19 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   @media screen and (max-width: 400px) {
-    margin-bottom: 10px;
+    width: 100%;
+    flex-basis: calc(100% / 3 - 10px);
+    margin-bottom: 5px;
+    &:nth-child(3) {
+      border: none;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    width: 100%;
+    flex-basis: calc(100% / 2 - 10px);
+    &:nth-child(2) {
+      border: none;
+    }
   }
 }
 
