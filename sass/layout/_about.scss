@@ -1,8 +1,8 @@
 .about {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-right: -30px;
-  // margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .about__item {
@@ -25,14 +25,14 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  // color: var(--main-title-color);
-  // background: rgba(47, 48, 58, 0.8);
+  color: var(--main-title-color);
+  background: rgba(47, 48, 58, 0.8);
 
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
