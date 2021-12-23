@@ -1,7 +1,7 @@
 .check__label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 2;
   letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
@@ -9,6 +9,14 @@
   margin-bottom: 30px;
 
   color: var(--second-text-color);
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check__box {
