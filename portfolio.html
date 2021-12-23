@@ -41,10 +41,7 @@
         </nav>
         <ul class="personal-date">
           <li class="personal-date__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="personal-date__link link"
-            >
+            <a href="mailto:info@devstudio.com" class="personal-date__link">
               <svg class="personal-date__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
@@ -52,7 +49,7 @@
             >
           </li>
           <li class="personal-date__item">
-            <a href="tel:+380961111111" class="personal-date__link link">
+            <a href="tel:+380961111111" class="personal-date__link">
               <svg class="personal-date__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -60,9 +57,68 @@
             >
           </li>
         </ul>
+        <button type="button" class="burger--open">
+          <svg class="mobail__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobail__burger is-hidden">
+        <div class="mobail__container">
+          <div class="mobail__block--top">
+            <button type="button" class="burger--close">
+              <svg class="mobail__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="page-mob">
+              <li class="page-mob__item">
+                <a
+                  href="./index.html"
+                  class="page-mob__link page__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="page-mob__item">
+                <a href="./portfolio.html" class="page-mob__link">Портфолио</a>
+              </li>
+              <li class="page-mob__item">
+                <a href="" class="page-mob__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobail_block--bottom">
+            <ul class="personal-mob">
+              <li class="personal-mob__item">
+                <a href="tel:+380961111111" class="personal-mob__link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="personal-mob__item">
+                <a href="mailto:info@devstudio.com" class="personal-mob__link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social">
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Instagram</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Twitter</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Facebook</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
@@ -267,69 +323,71 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main>   -->
     <footer class="footer">
       <div class="container footer__wrap">
-        <div class="footer__adres">
-          <a class="logo footer__link" href="./index.html"
-            >Web<span class="logo">Studio</span></a
-          >
-          <address class="adres">
-            <ul class="adres__list">
-              <li class="adres__item">
-                <a
-                  href="https://goo.gl/maps/y4soio12tymZy6jWA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="adres__link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer__wrap--table">
+          <div class="footer__adres">
+            <a class="logo footer__link" href="./index.html"
+              >Web<span class="logo">Studio</span></a
+            >
+            <address class="adres">
+              <ul class="adres__list">
+                <li class="adres__item">
+                  <a
+                    href="https://goo.gl/maps/y4soio12tymZy6jWA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="adres__link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="adres__item">
+                  <a href="mailto:info@devstudio.com" class="adres__date link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adres__item">
+                  <a href="tel:+380961111111" class="adres__date link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <h2 class="footer-social__title">присоединяйтесь</h2>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link footer-social--color">
+                  <svg class="social__icon" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adres__item">
-                <a href="mailto:info@devstudio.com" class="adres__date link"
-                  >info@devstudio.com</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link footer-social--color">
+                  <svg class="social__icon" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adres__item">
-                <a href="tel:+380961111111" class="adres__date link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link footer-social--color">
+                  <svg class="social__icon" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link footer-social--color">
+                  <svg class="social__icon" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <h2 class="footer-social__title">присоединяйтесь</h2>
-          <ul class="social">
-            <li class="social__item">
-              <a href="" class="social__link footer-social--color">
-                <svg class="social__icon" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link footer-social--color">
-                <svg class="social__icon" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link footer-social--color">
-                <svg class="social__icon" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link footer-social--color">
-                <svg class="social__icon" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="mailing__wrap">
           <h2 class="footer-social__title">Подпишитесь на рассылку</h2>
@@ -351,5 +409,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
