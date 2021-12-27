@@ -2,16 +2,23 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__item {
+  margin-bottom: 15px;
   margin-right: 8px;
-  &:last-child {
-    margin-right: 0;
+  &:nth-child(n + 2) {
+    margin-bottom: 0;
   }
-  @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -40,29 +47,23 @@
 }
 
 .cart {
+  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
-    margin-bottom: -30px;
     justify-content: center;
   }
 }
 
 .cart__item {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 450px;
-  }
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    width: 354px;
-    flex-basis: calc(768 / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
     flex-basis: calc(100% / 3 - 30px);
   }
 }

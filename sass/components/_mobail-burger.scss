@@ -93,9 +93,9 @@
 .mob-social {
   display: flex;
   margin: 0 -10px;
-  //   @media screen and (max-width: 400px) {
-  flex-wrap: wrap;
-  //   }
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mob-social__item {

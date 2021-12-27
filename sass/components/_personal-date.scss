@@ -10,6 +10,11 @@
 }
 
 .personal-date__item {
+  &:not(:last-child) {
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 50px;
     &:first-child {
@@ -31,9 +36,6 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 1200px) {
