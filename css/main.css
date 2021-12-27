@@ -325,6 +325,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .mailing__mail {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mailing__mail {
     width: 358px;
@@ -810,7 +816,6 @@ a {
 
 .about__wraper {
   position: relative;
-  display: block;
 }
 
 .about__text {
