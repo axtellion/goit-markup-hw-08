@@ -13,7 +13,7 @@
   max-width: 1600px;
   margin: 0 auto;
   width: 100vw;
-  @media (min-sesolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-bg__table.jpg);
-    @media (min-sesolution: 2dppx) {
+    @media (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
@@ -41,7 +41,7 @@
       ),
       url(../images/hero-bg.jpg);
     padding: 200px 0;
-    @media (min-sesolution: 2dppx) {
+    @media (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
