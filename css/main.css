@@ -722,7 +722,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .specificity__item {
+  .specificity__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
