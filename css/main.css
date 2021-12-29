@@ -1091,7 +1091,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .cart__item {
-    flex-basis: calc((100% -6 * 15px) / 3);
+    flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 
