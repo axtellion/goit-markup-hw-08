@@ -11,4 +11,9 @@
     left: 0;
     bottom: -1px;
   }
+  @media screen and (max-width: 767px) {
+    &::after {
+      display: none;
+    }
+  }
 }
